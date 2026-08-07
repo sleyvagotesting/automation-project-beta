@@ -213,7 +213,7 @@ public class LoginTest {
 	}
 	@Test
 	public void carritoDeCompras() {
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new EdgeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com");
 		driver.findElement(By.id("user-name")).sendKeys("visual_user");
