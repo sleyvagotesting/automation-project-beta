@@ -22,7 +22,7 @@ public class LoginTest {
 	public void abrirNavegador() { 
 
 		
-		WebDriver driver = new EdgeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com");
 		
