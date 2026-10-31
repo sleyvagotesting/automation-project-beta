@@ -79,14 +79,14 @@ public class LoginTest {
 	public void localizarElementoPorLinkText() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.selenium.dev/");
-		driver.findElement(By.linkText("Visit Conference Website for more information!")).click();
+		driver.findElement(By.linkText("W3C WebDriver standard")).click();
 		driver.quit();
 	}
 	@Test
 	public void localizarElementoPorPartialLinkText() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.selenium.dev/");
-		driver.findElement(By.partialLinkText("Visit Conference Website for")).click();
+		driver.findElement(By.partialLinkText("W3C WebDriver")).click();
 		driver.quit();
 	}
 	@Test
@@ -184,7 +184,7 @@ public class LoginTest {
 		}
 	@Test	
 	public void agregarProducto() {
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com");
 		driver.findElement(By.id("user-name")).sendKeys("visual_user");
@@ -198,7 +198,7 @@ public class LoginTest {
 	}
 	@Test
 	public void eliminarProducto() {
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com");
 		driver.findElement(By.id("user-name")).sendKeys("visual_user");
